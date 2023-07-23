@@ -13,3 +13,6 @@
 ### Asciinema brain-gtc:
 <a href="https://asciinema.org/a/r3pMymrFG2yRpdeczYp5IBbJX"><img src="https://asciinema.org/a/14.png" width="836"/></a>
 
+### Asciinema brain-progression:
+<a href="https://asciinema.org/a/4WHg5DRkZmxBipsOKLmTtloc1"><img src="https://asciinema.org/a/14.png" width="836"/></a>
+

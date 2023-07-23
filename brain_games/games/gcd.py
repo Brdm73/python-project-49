@@ -15,7 +15,7 @@ def play_gcd():
         question = f"{a} and {b}"
         # print("Test question: " + question)
         correct_answer = gcd(a, b)
-        print("!!! Вebugging !!! correct_answer: " + str(correct_answer))
+        # print("!!! Вebugging !!! correct_answer: " + str(correct_answer))
         return question, correct_answer
 
     game_question = 'Find the greatest common divisor of given numbers.'
