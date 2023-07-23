@@ -4,6 +4,12 @@ from ..cli import welcome_user
 
 
 def game_engine(generate_question, game_question):
+    """
+     Описание функции.
+      Аргументы:
+     arg1 -- функция возвращающая question(текущий вопрос), correct_answer(правильный ответ на него)
+     arg2 -- переменная с тексом общего вопрос для конктретной игры
+     """
     correct_answers_count = 0
     name = welcome_user()
 

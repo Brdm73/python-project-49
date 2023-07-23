@@ -9,3 +9,7 @@
 
 ### Asciinema brain-calc:
 <a href="https://asciinema.org/a/G5EgYhsRMUdRKv6fsceNTYk3T"><img src="https://asciinema.org/a/14.png" width="836"/></a>
+
+### Asciinema brain-gtc:
+<a href="https://asciinema.org/a/r3pMymrFG2yRpdeczYp5IBbJX"><img src="https://asciinema.org/a/14.png" width="836"/></a>
+
