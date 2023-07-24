@@ -13,6 +13,7 @@ def play_prime():
                 counter += 1
         return num, "yes" if counter == 2 else "no"
 
-    game_question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    game_question = 'Answer "yes" if given number is prime. ' \
+                    'Otherwise answer "no".'
 
     game_engine(generate_question, game_question)
