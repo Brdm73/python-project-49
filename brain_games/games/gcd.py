@@ -14,7 +14,7 @@ def play_gcd():
     def generate_question():
         a = random.randint(1, 100)
         b = random.randint(1, 100)
-        question = f"{a} and {b}"
+        question = f"{a} {b}"
         # print("Test question: " + question)
         correct_answer = gcd(a, b)
         # print("!!! Вebugging !!! correct_answer: " + str(correct_answer))
