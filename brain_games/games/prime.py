@@ -4,6 +4,7 @@ from ..games.common_games_logic import game_engine
 
 def play_prime():
     print("brain-prime\n")
+
     def generate_question():
         num = random.randint(1, 100)
         counter = 0

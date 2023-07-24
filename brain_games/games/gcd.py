@@ -10,6 +10,7 @@ def gcd(a, b):
 
 def play_gcd():
     print("brain-gcd\n")
+
     def generate_question():
         a = random.randint(1, 100)
         b = random.randint(1, 100)
