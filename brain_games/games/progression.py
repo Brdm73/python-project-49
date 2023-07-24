@@ -22,7 +22,7 @@ def play_progression():
         correct_answer = progression[hidden_index]
         # print("!!! Вebugging !!! correct_answer: " + str(correct_answer))
         progression[hidden_index] = '..'
-        question = progression
+        question = ' '.join(map(str, progression))
         return question, correct_answer
 
     game_question = "What number is missing in the progression?"
