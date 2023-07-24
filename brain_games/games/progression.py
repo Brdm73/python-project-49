@@ -15,6 +15,8 @@ def generate_progression():
 
 
 def play_progression():
+    print("brain-progression\n")
+
     def generate_question():
         progression, hidden_index = generate_progression()
         correct_answer = progression[hidden_index]
