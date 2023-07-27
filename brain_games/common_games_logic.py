@@ -3,7 +3,7 @@
 from brain_games.cli import welcome_user
 
 
-def game_engine(generated_question,correct_answer, game_question):
+def game_engine(generated_question, correct_answer, game_question):
     """
      Описание функции.
       Аргументы:

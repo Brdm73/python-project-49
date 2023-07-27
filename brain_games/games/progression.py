@@ -1,5 +1,4 @@
 import random
-from ..common_games_logic import game_engine
 
 
 def generate_progression():
@@ -29,4 +28,3 @@ def play_progression():
     generated_question, correct_answer = generate_question()
 
     return generated_question, correct_answer, game_question
-
