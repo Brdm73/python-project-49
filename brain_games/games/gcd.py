@@ -1,5 +1,5 @@
 import random
-from ..games.common_games_logic import game_engine
+from ..common_games_logic import game_engine
 
 
 def gcd(a, b):
@@ -21,5 +21,6 @@ def play_gcd():
         return question, correct_answer
 
     game_question = 'Find the greatest common divisor of given numbers.'
+    generated_question, correct_answer = generate_question()
 
-    game_engine(generate_question, game_question)
+    return generated_question, correct_answer, game_question

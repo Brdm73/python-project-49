@@ -1,23 +1,22 @@
 #!/usr/bin/env python3
 
-from ..cli import welcome_user
+from brain_games.cli import welcome_user
 
 
-def game_engine(generate_question, game_question):
+def game_engine(generated_question,correct_answer, game_question):
     """
      Описание функции.
       Аргументы:
-     arg1 -- функция возвращающая question(текущий вопрос),
-      correct_answer(правильный ответ на него)
-     arg2 -- переменная с тексом общего вопрос для конктретной игры
+     generated_question -- сгенерированный вопрос(текущий вопрос),
+     correct_answer -- правильный ответ на generated_question
+     game_question -- переменная с текстом общего вопрос для конктретной игры
      """
     correct_answers_count = 0
     name = welcome_user()
 
     while correct_answers_count < 3:
-        question, correct_answer = generate_question()
         print(game_question)
-        print(f"Question: {question}")
+        print(f"Question: {generated_question}")
         user_answer = input("Your answer: ")
 
         if str(user_answer) == str(correct_answer):

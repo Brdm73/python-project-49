@@ -1,5 +1,5 @@
 import random
-from ..games.common_games_logic import game_engine
+from ..common_games_logic import game_engine
 
 
 def generate_progression():
@@ -26,5 +26,7 @@ def play_progression():
         return question, correct_answer
 
     game_question = "What number is missing in the progression?"
+    generated_question, correct_answer = generate_question()
 
-    game_engine(generate_question, game_question)
+    return generated_question, correct_answer, game_question
+

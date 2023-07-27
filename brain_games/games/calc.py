@@ -1,5 +1,4 @@
 import random
-from ..games.common_games_logic import game_engine
 
 
 def play_calc():
@@ -15,5 +14,6 @@ def play_calc():
         return question, correct_answer
 
     game_question = "What is the result of the expression?"
+    generated_question, correct_answer = generate_question()
 
-    game_engine(generate_question, game_question)
+    return generated_question, correct_answer, game_question

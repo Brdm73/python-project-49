@@ -1,5 +1,5 @@
 import random
-from ..games.common_games_logic import game_engine
+from ..common_games_logic import game_engine
 
 
 def play_prime():
@@ -15,5 +15,6 @@ def play_prime():
 
     game_question = 'Answer "yes" if given number is prime. ' \
                     'Otherwise answer "no".'
+    generated_question, correct_answer = generate_question()
 
-    game_engine(generate_question, game_question)
+    return generated_question, correct_answer, game_question
