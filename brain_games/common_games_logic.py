@@ -3,20 +3,22 @@
 from brain_games.cli import welcome_user
 
 
-def game_engine(generate_question, game_question):
+def game_engine(game):
     """
      Описание функции.
       Аргументы:
-     arg1 -- функция возвращающая question(текущий вопрос),
-      correct_answer(правильный ответ на него)
-     arg2 -- переменная с тексом общего вопрос для конктретной игры
+     На вход ожидается модуль содержащий следующие атрибуты:
+     GAME_LOGO
+     GAME_QUESTION
+     generate_question() (функция должна возвращать: question, correct_answer)
      """
     correct_answers_count = 0
     name = welcome_user()
+    print(game.GAME_LOGO)
 
     while correct_answers_count < 3:
-        question, correct_answer = generate_question()
-        print(game_question)
+        question, correct_answer = game.generate_question()
+        print(game.GAME_QUESTION)
         print(f"Question: {question}")
         user_answer = input("Your answer: ")
 

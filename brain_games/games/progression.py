@@ -1,5 +1,7 @@
 import random
-from ..common_games_logic import game_engine
+
+GAME_LOGO = "brain-progression\n"
+GAME_QUESTION = 'What number is missing in the progression?'
 
 
 def generate_progression():
@@ -14,17 +16,10 @@ def generate_progression():
     return progression, hidden_index
 
 
-def play_progression():
-    print("brain-progression\n")
-
-    def generate_question():
-        progression, hidden_index = generate_progression()
-        correct_answer = progression[hidden_index]
-        # print("!!! Вebugging !!! correct_answer: " + str(correct_answer))
-        progression[hidden_index] = '..'
-        question = ' '.join(map(str, progression))
-        return question, correct_answer
-
-    game_question = "What number is missing in the progression?"
-
-    game_engine(generate_question, game_question)
+def generate_question():
+    progression, hidden_index = generate_progression()
+    correct_answer = progression[hidden_index]
+    # print("!!! Вebugging !!! correct_answer: " + str(correct_answer))
+    progression[hidden_index] = '..'
+    question = ' '.join(map(str, progression))
+    return question, correct_answer

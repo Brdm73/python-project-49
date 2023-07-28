@@ -1,23 +1,16 @@
 import random
-from ..common_games_logic import game_engine
+
+
+GAME_LOGO = "brain-even\n"
+GAME_QUESTION = 'Answer "yes" if the number is even, otherwise answer "no" '
 
 
 def is_even(num):
-    if num % 2 == 0:
-        return "yes"
-    else:
-        return "no"
+    return num % 2 == 0
 
 
-def play_even():
-    print("brain-even\n")
+def generate_question():
+    question = random.randint(1, 100)
+    correct_answer = 'yes' if is_even(question) else 'no'
 
-    def generate_question():
-        num = random.randint(1, 100)
-        correct_answer = is_even(num)
-
-        return num, correct_answer
-
-    game_question = 'Answer "yes" if the number is even, otherwise answer "no" '
-
-    game_engine(generate_question, game_question)
+    return question, correct_answer
