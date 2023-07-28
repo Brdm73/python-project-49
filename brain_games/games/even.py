@@ -1,4 +1,5 @@
 import random
+from ..common_games_logic import game_engine
 
 
 def is_even(num):
@@ -18,6 +19,5 @@ def play_even():
         return num, correct_answer
 
     game_question = 'Answer "yes" if the number is even, otherwise answer "no" '
-    generated_question, correct_answer = generate_question()
 
-    return generated_question, correct_answer, game_question
+    game_engine(generate_question, game_question)
