@@ -16,7 +16,7 @@ def generate_progression():
     return progression, hidden_index
 
 
-def hide_progression_element(progression):
+def transform_progression_to_string(progression):
     return ' '.join(map(str, progression))
 
 
@@ -25,5 +25,5 @@ def generate_question():
     correct_answer = progression[hidden_index]
     # print("!!! Debugging !!! correct_answer: " + str(correct_answer))
     progression[hidden_index] = '..'
-    question = hide_progression_element(progression)
+    question = transform_progression_to_string(progression)
     return question, correct_answer
