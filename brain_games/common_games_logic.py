@@ -15,10 +15,10 @@ def game_engine(game):
     correct_answers_count = 0
     name = welcome_user()
     print(game.GAME_LOGO)
+    print(game.GAME_QUESTION)
 
     while correct_answers_count < 3:
         question, correct_answer = game.generate_question()
-        print(game.GAME_QUESTION)
         print(f"Question: {question}")
         user_answer = input("Your answer: ")
 
