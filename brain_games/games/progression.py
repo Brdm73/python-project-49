@@ -1,18 +1,24 @@
+from random import randint
 import random
 
 GAME_LOGO = "brain-progression\n"
 GAME_QUESTION = 'What number is missing in the progression?'
 
+LOWER_LIMIT = 1
+UPPER_LIMIT = 100
+PROGRESSION_LENGTH = 10
+
+LOWER_STEP_LIMIT = 1
+UPPER_STEP_LIMIT = 10
+
 
 def generate_progression():
-    # Генерируем случайную длину прогрессии от 5 до 10
-    length = random.randint(5, 10)
-    # Генерируем случайную арифметическую прогрессию
-    start = random.randint(1, 10)
-    step = random.randint(1, 10)
-    progression = [start + (step * i) for i in range(length)]
+    # Генерируем  арифметическую прогрессию
+    start = randint(LOWER_LIMIT, UPPER_LIMIT)
+    step = randint(LOWER_STEP_LIMIT, UPPER_STEP_LIMIT)
+    progression = [start + (step * i) for i in range(PROGRESSION_LENGTH)]
     # Генерируем случайную позицию для скрытого элемента
-    hidden_index = random.randint(0, length - 1)
+    hidden_index = random.randint(0, PROGRESSION_LENGTH - 1)
     return progression, hidden_index
 
 
